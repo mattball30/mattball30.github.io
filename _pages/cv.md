@@ -36,8 +36,13 @@ Education
 
 Work experience
 ======
-* **Full-Stack Software Developer Intern**, *[TPP](https://tpp-uk.com)*, Summer 2023
-  -	Engaged in all parts of the software development life cycle, contributing to the ideation, design, development and testing of multiple features aimed at helping doctors and patients alike.
+**PhD Fellow**, *[AiChemist](https://aichemist.eu)*,  September 2024- 
+- Project entitled: "Prediction of optimal reaction conditions using Artificial Intelligence tools"
+
+***
+
+**Full-Stack Software Developer Intern**, *[TPP](https://tpp-uk.com)*, Summer 2023
+  -	Involved with all parts of the software development life cycle, contributing to the ideation, design, development and testing of multiple features aimed at helping doctors and patients alike.
   -	Experienced handling electronic patient records and enabling national level analytics with clinical reporting tools for over 53 million patient records.
   -	Improved technologies that bolstered public health initiatives and streamline clinical trial processes globally.
   -	Engaged in Agile methodologies using OOP analysis and design techniques to extend functionality.
@@ -53,7 +58,7 @@ Skills
 
 Projects
 ======
-  <ul>{% for post in site.projects reversed %}
+  <ul>{% for post in site.projects %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
 

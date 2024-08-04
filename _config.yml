@@ -7,7 +7,7 @@
 # server process.
 
 # Basic Site Settings
-locale                   : "en-US"
+locale                   : "en-UK"
 title                    : "Matt Ball"
 title_separator          : "-"
 name                     : &name "Matt Ball"
@@ -21,10 +21,10 @@ repository               : "mattball30.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "profile.png"
+  avatar           : "profile.jpeg"
   name             : "Matt Ball"
   pronouns         : "he/him"  
-  bio              : "PhD Student with the AiChemist MSCA DN Horizon Europe Project, researching computational reaction optimisation."
+  bio              : "PhD Student at AstraZeneca and UNISTRA"
   location         : "Strasbourg, France"
   employer         : "AstraZeneca/UNISTRA"
   uri              : # URL
@@ -206,7 +206,7 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  projects:
     output: true
     permalink: /:collection/:path/
   talks:
@@ -252,7 +252,7 @@ defaults:
       author_profile: true
       share: true
       comments: true
-  # _portfolio
+  # _projects
   - scope:
       path: ""
       type: projects
@@ -281,7 +281,7 @@ sass:
 permalink: /:categories/:title/
 # paginate: 5 # amount of posts to show
 # paginate_path: /page:num/
-timezone: America/Los_Angeles # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+timezone: Europe/London # http://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
 
 # Plugins
