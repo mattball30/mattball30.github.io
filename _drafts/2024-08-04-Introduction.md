@@ -2,7 +2,7 @@
 title: 'Introduction to the blog'
 date: 2024-08-04
 permalink: /posts/2024-08-04-Introduction/
-toc: true
+toc: false
 tags:
   - PhD
 ---
