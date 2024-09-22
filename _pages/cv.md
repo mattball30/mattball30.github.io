@@ -22,7 +22,7 @@ Full CV is available on request.
 
 **M.Sci, Natural Sciences (Chemistry)**, _University of Cambridge_, 2023-2024
 
-- First Class, ranked 2/72 across cohort.
+- **First Class**, ranked 2/72 across cohort.
 - Earned departmental and college prizes for exceptional exam performance, re-elected to college scholarship.
 - Specialised in Computational, Biological and Physical Chemistry modules.
 - Master's thesis entitled _"Developing a computational pipeline to determine optimal Affibody scaffold positioning"_.
@@ -31,7 +31,7 @@ Full CV is available on request.
 
 **BA, Natural Sciences**, _University of Cambridge_, 2020-2023
 
-- First Class, ranked 5/111 across cohort for final undergraduate year.
+- **First Class**, ranked 5/111 across cohort for final undergraduate year.
 - Earned college prize for exceptional exam performance, elected to college scholarship across all 3 undergradute years.
 - Specialised in Computational Chemistry, Maths and Chemical Biology.
 - Completed courses in multivariate and vector calculus, matrices, probability theory, thermodynamics, statistical and quantum mechanics.
@@ -58,18 +58,6 @@ Full CV is available on request.
 - Microsoft Office Suite
 - Full, Clean UK Drivers License
 - Beginner French
-
-# Projects
-
-  <ul>{% for post in site.projects %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
-
-# Publications
-
-  <ul>{% for post in site.publications reversed %}
-    {% include archive-single-cv.html %}
-  {% endfor %}</ul>
   
 Other Interests
 ======
