@@ -13,3 +13,5 @@ package-lock.json
 
 # Ignore the drafts directory
 _drafts/
+
+.DS_Store

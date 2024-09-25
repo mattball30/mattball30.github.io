@@ -13,7 +13,7 @@ Full CV is available on request.
 
 # Education
 
-**Ph.D, Computational Chemistry**, _University of Strasbourg_, 2024-2027 (expected)
+**Ph.D, Cheminformatics**, _University of Strasbourg_, 2024-2027 (expected)
 
 - Co-supervised by MolecularAI division at AstraZeneca as part of the [AiChemist](https://aichemist.eu) project.
 - Project entitled: "Prediction of optimal reaction conditions using Artificial Intelligence tools"

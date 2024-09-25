@@ -8,7 +8,7 @@ redirect_from:
 ---
 Hello, I'm Matt! 
 
-I am a first year PhD student as part of the AiChemist MSCA DN Horizon Europe Project, where I am studying at the University of Strasbourg for 18 months, before moving onto the MolecularAI divsion at AstraZeneca. 
+I am a first year PhD student as part of the AiChemist MSCA DN Horizon Europe Project, where I am studying at the University of Strasbourg for 18 months, before moving onto the MolecularAI division at AstraZeneca. 
 
 My research interests lie in computational chemical reaction optimisation, specifically the prediction of optimal reaction conditions using artificial intelligence tools.
 
