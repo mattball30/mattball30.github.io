@@ -24,7 +24,7 @@ Beyond producing the desired product, reaction conditions also influence:
 - Cost and environmental impact: Considerations include the use of expensive catalysts or environmentally harmful solvents.
 - Synthesis continuity: In multi-step syntheses, particularly for pharmaceuticals, insufficient yield at one stage can halt the entire process, wasting resources.
 
-Optimizing reaction conditions is therefore a balancing act between selectivity, yield, cost-effectiveness, and environmental considerations.
+Optimising reaction conditions is therefore a balancing act between selectivity, yield, cost-effectiveness, and environmental considerations.
 
 # What approaches exist already?
 Let's explore various approaches to selecting reaction conditions, including both traditional methods and those leveraging machine learning.
@@ -32,7 +32,7 @@ Let's explore various approaches to selecting reaction conditions, including bot
 ## Experimental Approaches 
 Traditionally, synthetic chemists rely on their expertise to perform an 'intuitive' similarity search. This involves scouring literature for similar reactions and using those conditions as a starting point. But what happens when these conditions don't work?
 
-One common method is 'One Factor At a Time' (OFAT). This involves systematically altering one dimension of the reaction conditions to optimize yield. Once an optimal point is found for one factor, it's fixed, and another condition is varied. This process continues until all conditions have been 'optimized'.
+One common method is 'One Factor At a Time' (OFAT). This involves systematically altering one dimension of the reaction conditions to optimise yield. Once an optimal point is found for one factor, it's fixed, and another condition is varied. This process continues until all conditions have been 'optimised'.
 
 However, OFAT has significant limitations:
 - It ignores the interdependence between different reaction conditions.
@@ -46,7 +46,7 @@ However, OFAT has significant limitations:
 More sophisticated approaches like 'Design of Experiments' (DoE) can explore reaction space more efficiently than OFAT. However, computational approaches offer the potential to significantly reduce time and costs by screening conditions before lab work begins.
 
 ## Computational Approaches
-We can categorize computational methods into five main groups. All of these models will follow a similar workflow, which can be seen below:
+We can categorise computational methods into five main groups. All of these models will follow a similar workflow, which can be seen below:
 
 |![RC Prediction Workflow](/images/blog/modelling-workflow.png)|
 |:--:| 
@@ -55,7 +55,7 @@ We can categorize computational methods into five main groups. All of these mode
 ### Similarity-Based Models
 These models enhance the 'intuitive' similarity search by leveraging large databases of chemical reactions. They provide simple, interpretable suggestions for new substrates. However, they have limitations:
 - Slow performance on large databases
-- Inability to generalize to new combinations of existing conditions
+- Inability to generalise to new combinations of existing conditions
 
 ### Ranking Models
 Ranking models work differently:
@@ -65,7 +65,7 @@ Ranking models work differently:
 4. The model ranks these conditions and returns the best options.
 
 Advantages:
-- Can generalize outside of known condition combinations
+- Can generalise outside of known condition combinations
 
 Disadvantages:
 - Computational limitations when dealing with many reaction classes due to the explosion of possible combinations
@@ -96,4 +96,4 @@ This approach is often used in conjunction with High Throughput Experimentation 
 
 # Conclusion
 
-Reaction condition prediction is a complex, multifaceted optimization problem. The interdependence of various factors means that changing one condition can significantly alter the impact of others. As we continue to develop more sophisticated computational tools, we're moving closer to being able to reliably predict optimal conditions for a wide range of chemical reactions, potentially revolutionizing the field of synthetic chemistry.
+Reaction condition prediction is a complex, multifaceted optimisation problem. The interdependence of various factors means that changing one condition can significantly alter the impact of others. As we continue to develop more sophisticated computational tools, we're moving closer to being able to reliably predict optimal conditions for a wide range of chemical reactions, potentially revolutionising the field of synthetic chemistry.
