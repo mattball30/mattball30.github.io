@@ -14,7 +14,7 @@ The conditions of a chemical reaction are crucial for several reasons. In most c
 2. Ensure correct regioselectivity (reaction occurs at the intended location on the molecule)
 3. Achieve proper stereoselectivity (resulting in the correct 3D structure, which is particularly important in drug synthesis)
 
-|![Demonstration of different selectivities with different conditions](/images/blog/blog-figures.pdf)|
+|![Demonstration of different selectivities with different conditions](/images/blog/condition-based-selectivity.png)|
 |:--:| 
 | *Examples of how different conditions lead to different products. Top: Different conditions result in varying positions of R groups, potentially affecting the molecule's properties. Bottom: Bond colors indicate stereochemistry (3D position). Different conditions yield different stereochemistries, which can significantly impact properties - the infamous case of Thalidomide illustrates this point.* |
 
