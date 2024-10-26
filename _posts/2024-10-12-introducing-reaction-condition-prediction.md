@@ -6,7 +6,11 @@ excerpt_separator: <!--more-->
 toc: true
 ---
 
-As mentioned in my [bio](/about.html), my PhD focuses on a project titled: 'Prediction of optimal reaction conditions using Artificial Intelligence tools'. But what exactly are 'optimal reaction conditions'? Reaction conditions are the environmental factors under which a chemical reaction proceeds. For those unfamiliar with chemistry, a chemical reaction is a process where one or more substances (reactants) are converted into one or more different substances (products).
+As mentioned in my [bio](/about.html), my PhD focuses on a project titled: 'Prediction of optimal reaction conditions using Artificial Intelligence tools'. But what exactly are 'optimal reaction conditions'? 
+
+<!--more-->
+
+Reaction conditions are the environmental factors under which a chemical reaction proceeds. For those unfamiliar with chemistry, a chemical reaction is a process where one or more substances (reactants) are converted into one or more different substances (products).
 
 # Why are chemical reaction conditions important? 
 The conditions of a chemical reaction are crucial for several reasons. In most cases, we can't simply mix the building blocks of our desired product and expect it to form. Specific reaction conditions are required to:
