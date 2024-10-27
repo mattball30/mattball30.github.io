@@ -6,11 +6,11 @@ excerpt_separator: <!--more-->
 toc: true
 ---
 
-# Introduction
 In the first [post](/posts/2024/introducing-reaction-condition-prediction/) I introduced my PhD project on predicting reaction conditions - the specific parameters like temperature, pressure, and chemical additives needed to make chemical reactions work efficiently. This time we are going to look at one reason why predicting reaction conditions is really HARD. Especially using the data-driven approaches that are all the rage nowadays.
 
 <!--more-->
 
+# Introduction
 That one reason is data. Recently, the 2024 Nobel Prize in Chemistry was given to David Baker, Sir Demis Hassabis and John M. Jumper 'for computational protein design' and 'for protein structure prediction' respectively. With machine learning approaches showing so much success in the structural biology world, some of you may be wondering why similar models don't exist for predicting reaction conditions, or for any scientific problem that you want to solve. The answer to that question is data. Protein structure prediction was made possible by an explosion in the number of high-quality protein structures being deposited in the Protein Data Bank (PDB). Such diverse and high-quality data provide the ideal starting point for building machine learning models, because now many protein sequences map one-to-one to highly accurate protein structures. Of course, the models still needed to be thought of and created in a way which used this data source to its maximum, and the incredible achievements of the 3 aforementioned scientists should not be understated.
 
 However, in chemistry, and particularly chemical synthesis, such a dataset is not yet available. We will discuss the 2 'types' of data source for training ML models for chemical reactions, and we will introduce the 3 main issues associated with them. 
@@ -38,16 +38,16 @@ Sources for this data include the US Patent and Trademark Office (USPTO), Reaxys
 
 **bold** = publically available. 
 
+|![Different Data Sources and their Properties](/images/blog/data-issues/data-sources.png)|
+|:--:| 
+| *Different types of data sources and their properties. Figure inspired by this [paper](https://pubs.acs.org/doi/10.1021/acscentsci.3c01163?fig=fig1&ref=pdf) which gives a great overview on data for reactivity modelling.* |
+
 # Data Problems 
 With an understanding of the sources and nature of the data that they contain we can begin to concentrate in more detail on the challenges faced when using these data sources. We can broadly classify these challenges into 3 categories which we will explain and look at the downstream impact when modelling: 
 
 1. Data sparsity
 2. Many-to-many relationships between conditions and reactions
 3. A lack of negative data
-
-|![Demonstration of different data issues with reaction datasets](/images/blog/data-issues.png)|
-|:--:| 
-| *A pictoral depiction of the 3 main problems with chemical reaction data.* |
 
 ## Data Sparsity
 We begin with a problem briefly touched on above. Chemical reaction data is massive, for any given reaction and substrates, we can use a huge amount of potentially valid conditions to get our desired product. However, the reality is that most of these conditions are never explored. If we have some conditions that work for our reaction, why should we waste time, effort and money exploring more reaction space to achieve small improvements in yield. As a result, our datasets end up being sparse, where reactions typically have no more than a couple (and normally one) set of conditions associated with it. This has big implications for downstream condition prediction, since we have very limited exploration of 'condition space' for substrates meaning that models can't learn the intricate relationships between the substrate (specifically its reactivity) and the conditions. This problem is improved on in HTE data, where a much larger number of conditions are screened and recorded, leading to strong performance in condition prediction and optimisation. However, for global datasets, this is an issue which has yet to be resolved, and requires a concerted effort to produce and record data for a wide variety of different reactions. 
@@ -57,6 +57,10 @@ This challenge is unavoidable with reaction data, and directly ties into the pre
 
 ## Lack of Negative Data
 This is very closely related to the data sparsity problem. Simply put, there are minimal amounts of recorded reactions which don't work. When training ML models, it is important to have a balanced dataset which ideally covers a wide range of substrates, and a wide range of conditions for that substrate. Understanding conditions which *don't* work is just as important as understand those which do. Particularly if the conditions which don't work, can be used for other substrates, as this gives crucial information about the underlying reactivity. However, often researchers don't publish negative data (because until recently, people were not as interested in what didn't work, and therefore it may have been considered pointless). HTE data offers an improvement once again, since this data frequently includes examples of reactions which don't work. Like the first point, a global effort to produce consistent reaction records and to record ALL reactions is required to mitigate this challenge, and initiatives such as the [Open Reaction Database](https://open-reaction-database.org) represent strong steps in this direction. However, this challenge can also be mitigated without additional new data. Researchers can enhance datasets using 'synthetic' data. This is reaction data which doesn't correspond to reaction that have actually been performed, but we can generate with certainty knowing that they would happen. For example, take a reaction A -> B under conditions C. If this reaction occurs with 100% yield, we know that no other products apart from B can be produced. Therefore, we can augment our dataset with examples of A -> D under conditions C which we label as negative. Other augmentation methods exist in an attempt to solve the 'imbalanced' dataset problem. 
+
+|![Demonstration of different data issues with reaction datasets](/images/blog/data-issues/data-issues.png)|
+|:--:| 
+| *A pictorial depiction of the 3 main problems with chemical reaction data. 1. Data Sparsity: For each reaction in a database, the number of conditions explored per reaction is very low. 2. Many-to-Many Correspondence between reactions and conditions: Reactions can proceed under many conditions (many of which aren't explored). Similarly, the same conditions can be applied to lots of different reactions successfully. 3. Lack of Negative Data: Most reaction datasets are 'unbalanced' mainly favouring successfully reactions. To develop models of chemical reactivity it is also important to understand which reactions **don't work** so models can better understand the links between chemical reactivity and the required conditions.* |
 
 # Conclusion
 I could go on about data challenges for chemical reactions for much longer, but I am sure that no one wants that. I hope that you found this an interesting introduction to the challenges that we face when building models of chemical reactivity.
