@@ -47,9 +47,7 @@
       "studyType": "PhD",
       "startDate": "2024-09-01",
       "endDate": "Present",
-      "courses": [
-        "Predicting organic reaction conditions using artificial intelligence tools."
-      ]
+      "courses": ["Predicting organic reaction conditions using artificial intelligence tools."]
     },
     {
       "institution": "University of Cambridge",
@@ -95,39 +93,22 @@
     {
       "name": "Chemistry",
       "icon": "fa-solid fa-flask-vial",
-      "keywords": [
-        "Quantum Chemistry",
-        "Organic Synthesis",
-        "Computational Chemistry",
-        "Physical Chemistry"
-      ]
+      "keywords": ["Quantum Chemistry", "Organic Synthesis", "Computational Chemistry", "Physical Chemistry"]
     },
     {
       "name": "Maths",
       "icon": "fa-solid fa-hashtag",
-      "keywords": [
-        "Linear Algebra",
-        "Calculus",
-        "Statistics",
-        "Group Theory"
-      ]
+      "keywords": ["Linear Algebra", "Calculus", "Statistics", "Group Theory"]
     },
     {
       "name": "Machine Learning",
       "icon": "fa-solid fa-robot",
-      "keywords": [
-        "Self-Supervised Learning",
-        "Geometric Deep Learning"
-      ]
+      "keywords": ["Self-Supervised Learning", "Geometric Deep Learning"]
     },
     {
       "name": "Programming (Languages)",
       "icon": "fa-solid fa-desktop",
-      "keywords": [
-        "Python",
-        "Rust",
-        "SQL"
-      ]
+      "keywords": ["Python", "Rust", "SQL"]
     },
     {
       "name": "Programming (Libraries)",
