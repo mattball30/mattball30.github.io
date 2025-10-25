@@ -1,64 +1,11 @@
 ---
-layout: archive
-title: "CV"
+layout: cv
 permalink: /cv/
-author_profile: true
-redirect_from:
-  - /resume
+title: cv
+nav: true
+nav_order: 5
+cv_pdf: example_pdf.pdf # you can also use external links here
+description: This is a description of the page. You can modify it in '_pages/cv.md'. You can also change or remove the top pdf download button.
+toc:
+  sidebar: left
 ---
-
-{% include base_path %}
-
-Full CV is available on request.
-
-# Education
-
-**Ph.D, Cheminformatics**, _University of Strasbourg_, 2024-2027 (expected)
-
-- Co-supervised by MolecularAI division at AstraZeneca as part of the [AiChemist](https://aichemist.eu) project.
-- Project entitled: "Prediction of optimal reaction conditions using Artificial Intelligence tools"
-
----
-
-**M.Sci, Natural Sciences (Chemistry)**, _University of Cambridge_, 2023-2024
-
-- **First Class**, ranked 2/72 across cohort.
-- Earned departmental and college prizes for exceptional exam performance, re-elected to college scholarship.
-- Specialised in Computational, Biological and Physical Chemistry modules.
-- Master's thesis entitled _"Developing a computational pipeline to determine optimal Affibody scaffold positioning"_.
-
----
-
-**BA, Natural Sciences**, _University of Cambridge_, 2020-2023
-
-- **First Class**, ranked 5/111 across cohort for final undergraduate year.
-- Earned college prize for exceptional exam performance, elected to college scholarship across all 3 undergradute years.
-- Specialised in Computational Chemistry, Maths and Chemical Biology.
-- Completed courses in multivariate and vector calculus, matrices, probability theory, thermodynamics, statistical and quantum mechanics.
-
-# Work experience
-
-**PhD Fellow**, _[AiChemist](https://aichemist.eu)_, September 2024-
-
-- Project entitled: "Prediction of optimal reaction conditions using Artificial Intelligence tools"
-
----
-
-**Full-Stack Software Developer Intern**, _[TPP](https://tpp-uk.com)_, Summer 2023
-
-- Involved with all parts of the software development life cycle, contributing to the ideation, design, development and testing of multiple features aimed at helping doctors and patients alike.
-- Experienced handling electronic patient records and enabling national level analytics with clinical reporting tools for over 53 million patient records.
-- Improved technologies that bolstered public health initiatives and streamline clinical trial processes globally.
-- Engaged in Agile methodologies using OOP analysis and design techniques to extend functionality.
-- Developed backend code for one of the top 5 largest SQL databases in the world.
-
-# Skills
-
-- Python, Rust, Git, Java, SQL
-- Microsoft Office Suite
-- Full, Clean UK Drivers License
-- Beginner French
-  
-Other Interests
-======
-**Sport**:  Compete regularly (4 times a week) in football, cricket and tennis clubs both in and outside of university, having played both cricket and tennis to a regional level. Vice-captain of the college football club, helping to organize a team of 30 players.
