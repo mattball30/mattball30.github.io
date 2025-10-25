@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: mattball30.github.io/al-folio/sitemap.xml
+Sitemap: https://mattball30.github.io/al-folio/sitemap.xml
